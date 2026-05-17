@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Times New Roman', Times, serif;
+background:#fcfdfd;
+}
+
+
+
+h2{
+text-align:center;
+margin:20px;
+}
+
+/* TABEL UTAMA */
+
+.main-table{
+width:100%;
+border:3px solid #2f9ae0;
+border-collapse:collapse;
+}
+
+/* HEADER */
+
+.header{
+height:70px;
+border:2px solid #2f9ae0;
+padding:15px;
+font-size:20px;
+background: #8e66d3;
+text-align: center;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+  grid-area:sidebar;
+  background:rgb(116, 158, 235);
+  padding:15px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  border-radius:10px;
+}
+
+/* CONTENT */
+
+.content{
+width:50%;
+vertical-align:top;
+border:2px solid #2f9ae0;
+padding:20px;
+}
+
+/* ALBUM */
+
+.album{
+width:30%;
+vertical-align:top;
+border:2px solid #a07cde;
+padding:20px;
+}
+
+/* FOOTER */
+
+.footer{
+height:60px;
+text-align:center;
+border:2px solid #2f9ae0;
+padding:15px;
+background: #8e66d3;
+}
+
+/* CARD CONTENT */
+
+.card{
+width:28%;
+display:inline-block;
+background:#c49db3;
+color:white;
+margin:10px;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.card button{
+width:100%;
+margin-top:10px;
+padding:5px;
+}
+
+/* FOTO ALBUM */
+
+.foto{
+width:25%;
+height:150px;
+display:inline-block;
+background:#c49db3;
+margin:10px;
+padding:5px;
+border-radius:10px;
+text-align:center;
+vertical-align:top;
+}
+
+.foto img{
+width:100%;
+height:100px;
+object-fit:cover;
+border-radius:10px;
+}
+
+button{
+padding:8px;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>TUGAS GRID</h2>
+
+<table class="main-table">
+
+<tr>
+<td colspan="3" class="header">Header</td>
+</tr>
+
+<tr>
+
+<!-- SIDEBAR -->
+<td class="sidebar">
+
+<h4>Sidebar</h4>
+<br>
+<p>Menu</p>
+<br><br>
+<p>Home</p>
+<br><br>
+<p>Jadwal</p>
+
+<br><br><br><br><br>
+<br><br><br>
+<button>Keluar</button>
+
+</td>
+
+<!-- CONTENT -->
+<td class="content">
+
+<h4>Isi Content</h4>
+
+<div class="card">
+<h4>Judul</h4>
+<p>Isi Konten</p>
+<button>KLIK</button>
+</div>
+
+<div class="card">
+<h4>Judul</h4>
+<p>Isi Konten</p>
+<button>KLIK</button>
+</div>
+
+<div class="card">
+<h4>Judul</h4>
+<p>Isi Konten</p>
+<button>KLIK</button>
+</div>
+
+<div class="card">
+<h4>Judul</h4>
+<p>Isi Konten</p>
+<button>KLIK</button>
+</div>
+
+<div class="card">
+<h4>Judul</h4>
+<p>Isi Konten</p>
+<button>KLIK</button>
+</div>
+
+<div class="card">
+<h4>Judul</h4>
+<p>Isi Konten</p>
+<button>KLIK</button>
+</div>
+
+</td>
+
+<!-- ALBUM -->
+<td class="album">
+
+<h4>Album</h4>
+
+<div class="foto">
+<img src="aseete/mbg.jpg">
+<p>Mewarnai</p>
+</div>
+
+<div class="foto">
+<img src="aseete/danau.jpg">
+<p>Danau</p>
+</div>
+
+<div class="foto">
+<img src="aseete/download.jpg">
+<p>Ronaldo</p>
+</div>
+
+<div class="foto">
+<img src="aseete/gunung.jpg">
+<p>Gunung</p>
+</div>
+
+<div class="foto">
+<img src="aseete/hutan.jpg">
+<p>Hutan</p>
+</div>
+
+<div class="foto">
+<img src="aseete/messi.jpg">
+<p>Messi</p>
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+<td colspan="3" class="footer">Footer</td>
+</tr>
+
+</table>
+
+</body>
+</html>
